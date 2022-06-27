@@ -748,8 +748,10 @@ class Android extends CI_Controller {
           $result = curl_exec($curl);
           // Free up the resources $curl is using
           curl_close($curl);
-  
+          
           $getMenu = json_decode($result,true);
+          // var_dump($result);die();
+
           $cart['datamenu'] = $getMenu['data'];
   
           for ($i=0; $i < count($menu['datamenu']) ; $i++) { 

@@ -56,7 +56,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Terima Kasih Telah Memesan di Walbid Collection</div>
+                                                Terima Kasih Telah Memesan di SnackSnake</div>
                                                 <div class="h6 mb-0 mt-4 font-weight-bold text-gray-800">Ongkir : Rp. <?= $ongkir ?></div>
                                             <div class="h5 mb-0 mt-4 font-weight-bold text-gray-800">Total : Rp. <?=$datatotal + $ongkir;?></div>
                                             <br>
