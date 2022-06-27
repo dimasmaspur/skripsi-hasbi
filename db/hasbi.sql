@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 19 Jun 2022 pada 15.24
+-- Waktu pembuatan: 27 Jun 2022 pada 17.09
 -- Versi server: 10.4.24-MariaDB
 -- Versi PHP: 7.4.28
 
@@ -100,8 +100,20 @@ CREATE TABLE `pesanan` (
   `user` varchar(255) DEFAULT NULL,
   `status` varchar(255) DEFAULT NULL,
   `qty` int(11) DEFAULT NULL,
-  `total` bigint(20) DEFAULT NULL
+  `total` bigint(20) DEFAULT NULL,
+  `alamat` text NOT NULL,
+  `notes` varchar(255) NOT NULL,
+  `kota` varchar(255) NOT NULL,
+  `ongkir` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC;
+
+--
+-- Dumping data untuk tabel `pesanan`
+--
+
+INSERT INTO `pesanan` (`id`, `nama`, `tanggal`, `subtotal`, `item`, `user`, `status`, `qty`, `total`, `alamat`, `notes`, `kota`, `ongkir`) VALUES
+(1, 'White Cloth', '2022-06-27', 200000, '\"[{\\\"id\\\":\\\"3\\\",\\\"namamenu\\\":\\\"White Cloth\\\",\\\"qty\\\":\\\"1\\\",\\\"subtotal\\\":\\\"200000\\\",\\\"harga\\\":\\\"200000\\\",\\\"user\\\":\\\"hasbi\\\",\\\"idmenu\\\":\\\"1\\\"}]\"', 'hasbi', 'hasbi', 1, 200000, 'tasdt', 'asdhasjhd', 'JABODETABEK', 8000),
+(2, 'White Cloth', '2022-06-27', 200000, '\"[{\\\"id\\\":\\\"3\\\",\\\"namamenu\\\":\\\"White Cloth\\\",\\\"qty\\\":\\\"1\\\",\\\"subtotal\\\":\\\"200000\\\",\\\"harga\\\":\\\"200000\\\",\\\"user\\\":\\\"hasbi\\\",\\\"idmenu\\\":\\\"1\\\"}]\"', 'hasbi', 'hasbi', 1, 200000, 'jhabjhdas', 'ahdbajhd', 'JABODETABEK', 8000);
 
 --
 -- Indexes for dumped tables
@@ -139,7 +151,7 @@ ALTER TABLE `pesanan`
 -- AUTO_INCREMENT untuk tabel `keranjang`
 --
 ALTER TABLE `keranjang`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `menu`
@@ -157,7 +169,7 @@ ALTER TABLE `m_user`
 -- AUTO_INCREMENT untuk tabel `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
