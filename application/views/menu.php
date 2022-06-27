@@ -1,7 +1,7 @@
 <div class="container-fluid">
 
 <!-- Page Heading -->
-<h1 class="h3 mb-2 text-gray-800">Data Menu</h1>
+<h1 class="h3 mb-2 text-gray-800">Data Barang</h1>
 <button class="btn btn-success"   type="button" data-toggle="modal" data-target="#exampleModal">
      <i class="fas fa-plus"></i>
 Tambah
@@ -62,7 +62,7 @@ Tambah
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Tambah Menu</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Tambah Barang</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

@@ -48,7 +48,7 @@
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
             data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="<?= base_url('dashboard/menu')?>">Menu</a>
+                <a class="collapse-item" href="<?= base_url('dashboard/menu')?>">Barang</a>
                 <a class="collapse-item" href="<?= base_url('dashboard/user')?>">User</a>
             </div>
         </div>
